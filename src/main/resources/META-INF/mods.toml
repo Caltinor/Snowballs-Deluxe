@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[38,)"
+license="All rights reserved"
+
+[[mods]] 
+modId="dicemcsnowball"
+version="${file.jarVersion}" 
+displayName="Example Mod" 
+credits="This mod is courtesy of MMD's WinterJam 2021"
+authors="Caltinor"
+description='''
+This mod adds the freezing effect to entities hit by snowballs.
+
+There is also some compat with other winterjam mods that add snowballs.
+'''
+
+[[dependencies.dicemcsnowball]] 
+    modId="forge" 
+    mandatory=true 
+    versionRange="[38,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dicemcsnowball]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18,1.19)"
+    ordering="NONE"
+    side="BOTH"
