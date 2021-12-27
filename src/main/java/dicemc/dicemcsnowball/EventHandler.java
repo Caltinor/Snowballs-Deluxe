@@ -19,8 +19,9 @@ public class EventHandler {
 				event.getEntityLiving().setIsInPowderSnow(true);
 				event.getEntityLiving().setTicksFrozen(ticksFrozen + Config.FREEZE_ON_HIT.get());
 				if (event.getEntityLiving() instanceof SkeletonMixin) {
-					int rndRange = (int)(150d/ (1d/Config.STRAY_CHANCE.get())) ;
-					((SkeletonMixin)event.getEntityLiving()).setInPowderSnowTime(rnd.nextInt(rndRange));
+					int rndValue = rnd.nextInt((int)(150d/ Config.STRAY_CHANCE.get()));
+					System.out.println(rndValue);
+					((SkeletonMixin)event.getEntityLiving()).setInPowderSnowTime(rndValue);
 				}
 			}
 		}
