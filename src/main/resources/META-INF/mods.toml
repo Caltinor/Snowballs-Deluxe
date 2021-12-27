@@ -1,11 +1,11 @@
 modLoader="javafml"
 loaderVersion="[38,)"
-license="All rights reserved"
+license="Public Domain"
 
 [[mods]] 
 modId="dicemcsnowball"
 version="${file.jarVersion}" 
-displayName="Example Mod" 
+displayName="Snowballs Deluxe" 
 credits="This mod is courtesy of MMD's WinterJam 2021"
 authors="Caltinor"
 description='''
