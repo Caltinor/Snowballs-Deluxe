@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.18-1.1'
+version = '1.18-1.1.1'
 group = 'dicemc.dicemcsnowball' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'dicemcsnowball'
 
@@ -90,6 +90,7 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18-38.0.8'
+	annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
